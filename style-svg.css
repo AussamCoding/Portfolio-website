@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+
+
+
+image {
+  filter: grayscale();
+
+}
+
+
+
+
+
+#logo {
+  animation-name: inner;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  /* opacity: 0;
+  transition: opacity 0.5s ease-in; */
+
+
+}
+
+
+
+#logo:hover path {
+
+  animation-name: reverse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+}
+
+
+#logo:hover {
+  animation-name: line;
+}
+
+
+#logo path {
+
+  stroke-dasharray: 3413.700439453125;
+  stroke-dashoffset: 3413.700439453125;
+  animation: line-anim 3s ease forwards;
+
+}
+
+
+.path-1 path {
+  stroke-dasharray: 3413.700439453125;
+  stroke-dashoffset: 3413.700439453125;
+  animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes reverse {
+  from {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dasharray: 3413.700439453125;
+    stroke-dashoffset: 3413.700439453125;
+  }
+}
+
+
+
+@keyframes inner {
+
+  from {
+    fill: none;
+    opacity: 0;
+
+  }
+
+  to {
+    fill: url(#img1);
+    opacity: 1;
+
+  }
+}
+
+@keyframes line {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: none;
+  }
+}

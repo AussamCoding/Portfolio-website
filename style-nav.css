@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;900&display=swap');
+
+
+
+header {
+  background-color: #23424A;
+}
+
+nav {
+  position: relative;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  margin-top: -200px;
+  transition: all 0.3s ease;
+  height: 80px;
+  background-color: #23424A;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 5px #193034;
+  /* border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid transparent;
+  box-shadow: 0 0 15px #38ced9;
+  outline: none;
+  animation: electric 0.05s infinite;
+  transition: box-shadow 1s ease; */
+}
+
+
+
+
+
+
+/* @keyframes electric {
+  0% {
+    box-shadow: inset 0 0 10px transparent, 0 0 15px #38ced9a2;
+  }
+
+  50% {
+    box-shadow: inset 0 0 10px #38ced9, 0 0 15px #38ced9;
+    ;
+  }
+
+  100% {
+    box-shadow: inset 0 0 10px transparent, 0 0 15px #38ced9a2;
+  }
+
+
+
+} */
+
+
+
+
+
+nav .links {
+
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+ul:hover li a {
+  transform: scale(1.5);
+  opacity: 0.2;
+  filter: blur(5px);
+}
+
+ul li a:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+  text-decoration: none;
+  color: #193034;
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #38ced9;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+nav .links li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+
+}
+
+nav .links a {
+  display: block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #0aa8a0;
+  text-transform: uppercase;
+  transition: 0.5s;
+  text-decoration: none;
+
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+
+nav .icon-burger .lines {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+  .down-nav {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    margin-top: 0;
+  }
+
+  #hero {
+    padding: 150px 0 140px 0;
+  }
+
+
+
+  ul:hover li a {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+
+
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav .links a {
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    width: 100vw;
+    padding: 20px 0;
+    color: #38ced9;
+  }
+
+
+  nav :checked~.links {
+    bottom: 0;
+
+  }
+
+
+  nav :checked~.links li:nth-child(1) a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 320ms;
+
+
+  }
+
+  nav :checked~.links li:nth-child(2) a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 550ms;
+  }
+
+  nav :checked~.links li:nth-child(3) a {
+    opacity: 1;
+    transition: opacity 230ms ease-in-out 750ms;
+  }
+
+  nav :checked~.links li:nth-child(4) a {
+    opacity: 1;
+    transition: opacity 220ms ease-in-out 1050ms;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+
+  nav :checked~.icon-burger .lines:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked~.icon-burger .lines:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked~.icon-burger .lines:nth-child(2) {
+    opacity: 0;
+    ;
+  }
+
+
+}

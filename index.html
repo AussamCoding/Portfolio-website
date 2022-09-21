@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style-nav.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-svg.css">
+  <link rel="stylesheet" href="style-slider.css">
+  <link rel="stylesheet" href="style-footer.css">
+</head>
+
+<body>
+  <div class="down-nav" id="down-nav" onclick="downFunction()" ondblclick="down1Function()" title="View Navbar">
+    <span class="material-icons" id="down-nav-arrow">
+      expand_more
+    </span>
+  </div>
+  <header>
+    <nav id="nav">
+      <input type="checkbox" id="nav-toggle">
+      <ul class="links" id="links">
+        <li><a href="http://127.0.0.1:5501/index.html#home" id="head2">Home</a></li>
+        <li><a href="#hero" id="head3">About</a></li>
+        <li><a href="#second-page" id="head1">Portfolio</a></li>
+        <li><a href="#contact" id="head">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger" id="icon-burger">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </label>
+    </nav>
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons">
+      keyboard_double_arrow_up
+    </span></button>
+  <div class="hero" id="hero">
+    <div class="container row">
+      <div class="hero__text">
+        <h1>Hello, I'm Austin Menezes.</h1>
+        <p>A <span class="secondary-color">FRONT-END WEB DEVELOPER</span> passionate about creating interactive
+          applications and
+          experience on the
+          web.
+        </p>
+        <div class="but-flex">
+          <div class="btn-item">
+            <a href="#second-page" class="btn">View Projects</a>
+          </div>
+          <div class="btn-item">
+            <a href="#contact" class="btn btn-item">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero_img">
+        <svg viewBox="0 0 988 742" id="logo" fill="none" width="600" height="450">
+          <defs>
+            <pattern id="img1" patternUnits="userSpaceOnUse" width="800" height="800">
+              <image href="./Austin-removebg-preview.png" x="160" y="-28" width="800" height="800" />
+            </pattern>
+          </defs>
+          <path
+            d="M983.606 229.862C1027.6 73.862 596.73 -8.43427 229.606 1.86198C-137.518 12.1582 -5.85698 226.698 229.606 348.863C465.069 471.027 129.606 497.862 229.606 695.862C329.606 893.861 939.61 385.863 983.606 229.862Z"
+            stroke="#38CFD9" stroke-width="5" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="second-part" id="second-page">
+    <section class="slider-wrapper">
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <video loop muted play autoplay class="back-video" title="YouTube clone">
+              <source src="./images/Youtubeclone.mp4" type="video/mp4" autoplay>
+            </video>
+            <div class="slide-tag">
+              <h3 id="visible-tag"><a href="" id="b1" onmouseenter="big()" onmouseleave="normal()">
+                  YouTube clone</a><span id="code-tag" class="code-tag">/<span class="material-icons chevron one">
+                    navigate_next
+                  </span></span><span class="material-icons chevron" id="chevron">
+                  navigate_next
+                </span>
+              </h3>
+            </div>
+          </div>
+          <!-- <div class="slide">
+            <video loop muted play autoplay class="back-video">
+              <source src="./images/Youtubeclone.mp4" type="video/mp4" autoplay>
+            </video>
+          </div> -->
+          <div class="slide">
+            <video loop muted play autoplay class="back-video" title="Product website">
+              <source src="./images/recording-2022-09-10-02-19-09.mp4" type="video/mp4" autoplay>
+            </video>
+            <div class="slide-tag">
+              <h3 id="visible-tag"><a href="" id="b2" onmouseenter="big2()" onmouseleave="normal2()">
+                  Product page</a><span id="code-tag-1" class="code-tag">/<span class="material-icons chevron one">
+                    navigate_next
+                  </span></span><span class="material-icons chevron" id="chevron-1">
+                  navigate_next
+                </span></h3>
+            </div>
+          </div>
+          <div class="slide">
+            <video loop muted play autoplay class="back-video" title="Unit Converter">
+              <source src="./images/recording-2022-09-18-10-23-56.mp4" type="video/mp4" autoplay>
+            </video>
+            <div class="slide-tag">
+              <h3 id="visible-tag"><a href="" id="b3" onmouseenter="big3()" onmouseleave="normal3()">
+                  Unit Converter</a><span id="code-tag-3" class="code-tag">/<span class="material-icons chevron one">
+                    navigate_next
+                  </span></span><span class="material-icons chevron" id="chevron-3">
+                  navigate_next
+                </span></h3>
+            </div>
+          </div>
+          <!-- <div class="slide">
+            <video loop muted play autoplay class="back-video">
+              <source src="./images/Youtubeclone.mp4" type="video/mp4" autoplay>
+            </video>
+          </div> -->
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <!-- <div class="auto-btn4"></div> -->
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <!-- <label for="radio4" class="manual-btn"></label> -->
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <div class="scroll">
+        <a href="#two-col" class="scroll-down second" title="scroll-down"></a>
+      </div>
+    </section>
+  </div>
+  <div class="two-col-wrapper" id="two-col">
+    <section class="two-col">
+      <div class="mobile-view">
+        <h2>Responsive Mobile View</h2>
+      </div>
+      <div class="container row mobile">
+        <div class="col">
+          <img src="./images/Youtube.png" alt="" srcset="" height="570" width="286">
+        </div>
+        <div class="col">
+          <img src="./images/Procut.png" alt="" srcset="" height="570" width="286">
+        </div>
+        <div class="scroll responsive">
+          <a href="#contact" class="scroll-down" title="scroll-down"></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="contact-wrapper" id="contact">
+    <section class="two-col contact">
+      <div class="container row mobile">
+        <div class="col">
+          <h1 class="l-heading"> <span class="text-primary">Contact</span> Me</h1>
+          <form>
+            <div class="from-group">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="from-group">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="from-group">
+              <label for="message"></label>
+              <textarea name="message" id="message" placeholder="Comment...." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="col contact-icons">
+          <hr>
+          <div class="container row">
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+              </svg>
+            </div>
+          </div>
+          <div class="row container">
+            <div class="col second-line">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64z" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <footer>
+
+    <i class="fa-regular fa-envelope"></i>
+    <a href="mailto: austin.menezes.420@gmail.com">
+      <p> austin.menezes.420@gmail.com</p>
+    </a>
+
+
+  </footer>
+
+  <script>
+
+
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        var clickCounter = 0;
+
+        document.getElementById('nav').style.position = "fixed";
+      } else { document.getElementById('nav').style.position = "relative"; }
+
+    }
+
+
+
+    var x = window.matchMedia("(max-width: 750px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+
+      }
+    }
+
+
+
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      // location.reload();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    function down1Function() {
+      document.getElementById("nav").style.marginTop = "-200px";
+      document.getElementById("down-nav-arrow").style.transform = "rotatex(0deg)";
+      document.getElementById("down-nav").style.top = "0";
+      // document.getElementById("down-nav").style.position = "relative";
+      document.getElementById("hero").style.paddingTop = "10em";
+      document.getElementById("down-nav").setAttribute("title", "View Navbar")
+
+      location.reload();
+    }
+
+    function downFunction() {
+      document.getElementById("nav").style.marginTop = "0";
+      document.getElementById("down-nav-arrow").style.transform = "rotatex(180deg)";
+      document.getElementById("down-nav").style.top = "80px";
+      document.getElementById("down-nav").style.position = "absolute";
+      // document.getElementById("nav").style.position = "relative";
+
+      document.getElementById("down-nav").setAttribute("title", "Double click to hide Navbar")
+
+    }
+
+
+
+
+
+    var input = document.getElementById("head");
+    input.addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("icon-burger").click();
+      // document.getElementById("nav").style.position = "relative";
+      window.location = "http://127.0.0.1:5501/index.html#contact";
+    })
+    var input = document.getElementById("head1");
+    input.addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("icon-burger").click();
+      // document.getElementById("nav").style.position = "relative";
+      window.location = "http://127.0.0.1:5501/index.html#second-page";
+    })
+    var input = document.getElementById("head2");
+    input.addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("icon-burger").click();
+      // document.getElementById("nav").style.position = "relative";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    })
+    var input = document.getElementById("head3");
+    input.addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("icon-burger").click();
+      // document.getElementById("nav").style.position = "relative";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    })
+
+
+
+
+
+
+
+    // View Code 
+
+
+
+    function big() {
+      document.getElementById("b1").innerText = "View Code";
+      document.getElementById("chevron").style.color = "#40D3DC";
+
+      document.getElementById("chevron").style.transform = "rotatey(180deg)";
+      document.getElementById("code-tag").style.display = "block";
+    }
+
+    function normal() {
+      document.getElementById("b1").innerText = "YouTube clone";
+      document.getElementById("chevron").style.color = "white";
+
+      document.getElementById("chevron").style.transform = "rotatey(0deg)";
+      document.getElementById("code-tag").style.display = "none";
+
+    }
+
+    function big2() {
+      document.getElementById("b2").innerText = "View Code";
+      document.getElementById("chevron-1").style.color = "#40D3DC";
+      document.getElementById("chevron-1").style.transform = "rotatey(180deg)";
+      document.getElementById("code-tag-1").style.display = "block";
+
+
+    }
+
+    function normal2() {
+      document.getElementById("b2").innerText = "Product Page";
+      document.getElementById("chevron-1").style.color = "white";
+      document.getElementById("chevron-1").style.transform = "rotatey(0deg)";
+      document.getElementById("code-tag-1").style.display = "none";
+    }
+    function big3() {
+      document.getElementById("b3").innerText = "View Code";
+      document.getElementById("chevron-3").style.color = "#40D3DC";
+      document.getElementById("chevron-3").style.transform = "rotatey(180deg)";
+      document.getElementById("code-tag-3").style.display = "block";
+
+
+    }
+
+    function normal3() {
+      document.getElementById("b3").innerText = "Unit converter";
+      document.getElementById("chevron-3").style.color = "white";
+      document.getElementById("chevron-3").style.transform = "rotatey(0deg)";
+      document.getElementById("code-tag-3").style.display = "none";
+    }
+
+
+    // image-slider
+    const slides = document.querySelectorAll(".slide");
+    const numberOfSlides = slides.length;
+    var counter = 1;
+    var myFnc = function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > numberOfSlides) {
+        counter = 1;
+
+      };
+    }; setInterval(myFnc, 8000);
+    myFnc();
+
+// image-slider
+  </script>
+
+</body>
+
+</html>
