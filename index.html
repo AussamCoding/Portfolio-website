@@ -362,6 +362,7 @@
       document.getElementById("icon-burger").click();
       // document.getElementById("nav").style.position = "relative";
       window.location = "#second-page";
+
     })
     var input = document.getElementById("head2");
     input.addEventListener("click", function (event) {
@@ -371,7 +372,10 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
       window.location = "#hero";
-
+      while (document.body.scrollTop == 0 && document.documentElement.scrollTop == 0) {
+        location.reload();
+        break;
+      }
     })
     var input = document.getElementById("head3");
     input.addEventListener("click", function (event) {
@@ -381,7 +385,10 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
       window.location = "#hero";
-
+      while (document.body.scrollTop == 0 && document.documentElement.scrollTop == 0) {
+        location.reload();
+        break;
+      }
     })
 
 
