@@ -97,7 +97,7 @@ image {
   to {
     fill: url(#img1);
     opacity: 1;
-
+    background-image: none;
   }
 }
 
@@ -118,19 +118,23 @@ image {
     pointer-events: none;
   }
 
-
-
-
   @keyframes inner {
 
     from {
-      fill: url(#img1);
-      opacity: 1;
+      fill: transparent;
+      opacity: 0;
+      background-image: none;
+
 
     }
 
     to {
-      fill: url(#img1);
+      fill: transparent;
+      background-image: url("./Group\ 1.png");
+
+      background-position: center;
+      background-size: 90%;
+      background-repeat: no-repeat;
       opacity: 1;
 
     }
