@@ -117,4 +117,22 @@ image {
   #logo {
     pointer-events: none;
   }
+
+  @keyframes inner {
+
+    from {
+      fill: url(#img1);
+      opacity: 1;
+
+    }
+
+    to {
+      fill: url(#img1);
+      opacity: 1;
+
+    }
+  }
+
+
+
 }
