@@ -84,11 +84,21 @@ h1 {
 }
 
 
+
+
+
 .row {
   display: flex;
   justify-content: space-between;
 
 }
+
+
+.hero .row {
+  flex-direction: column;
+
+}
+
 
 .col {
   width: 100%;
@@ -97,7 +107,7 @@ h1 {
 
 
 .hero {
-  padding: 200px 0 140px 0;
+  padding: 20% 0 0 0 !important;
   background-color: #23424A;
   color: #fff;
 
@@ -108,15 +118,19 @@ h1 {
 
 
 .hero__text {
-  width: 65%;
+  margin-top: -12%;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  order: 1;
 }
 
 
 .hero_img {
-  width: 40%;
-  margin-left: 1em;
-  position: relative;
-  align-self: flex-start;
+  align-self: center;
+  width: 90%;
+  order: 0;
+  margin-bottom: 5%;
 }
 
 
@@ -135,7 +149,7 @@ h1 {
 .two-col-wrapper {
   padding: 3em 0 0 0;
   height: 100%;
-  background-color: #193034;
+  background-color: #23424A;
 
 }
 
@@ -153,7 +167,7 @@ h1 {
 
 
 .two-col h2 {
-  margin-top: 0.2em;
+  margin-top: 0.3em;
   font-size: 2.5rem;
 }
 
@@ -173,10 +187,13 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
   width: 100%;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 2em 0;
   border-radius: 30px;
 
 }
+
+
+
 
 
 /* Contact  */
@@ -194,9 +211,6 @@ h1 {
 
 
 
-.scroll.responsive .scroll-down {
-  bottom: 5px;
-}
 
 
 .contact {
@@ -328,8 +342,8 @@ footer a {
 
 .scroll-down {
   position: absolute;
-  bottom: 15px;
   left: 50%;
+  bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -339,6 +353,7 @@ footer a {
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
+  display: none;
 }
 
 
@@ -443,12 +458,39 @@ footer a {
 
 
 @media only screen and (min-width: 750px) {
+  .hero {
+    padding: 20% 0 140px 0 !important;
+    background-color: #23424A;
+    color: #fff;
+  }
+
+  .hero__text {
+    width: 65%;
+    order: unset;
+    text-align: unset;
+  }
+
+
+  .hero_img {
+    align-self: center;
+    width: 40%;
+    margin-left: 1em;
+    position: relative;
+    align-self: flex-start;
+  }
+
+
+
+
+  .hero .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .contact-wrapper {
     padding: 0;
-
-
   }
+
 
   .two-col-wrapper {
     padding: 0;
@@ -464,23 +506,23 @@ footer a {
 
   .scroll-down {
     position: absolute;
-    bottom: 24px;
     left: 50%;
+    bottom: 3%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 32px;
     height: 32px;
-    border: 2px solid #38CFD9;
+    border: 2px solid #38ced9;
     background-size: 14px auto;
     border-radius: 50%;
     z-index: 2;
   }
 
-
-  .scroll.responsive .scroll-down {
-    bottom: 50px;
+  .two-col .scroll-down {
+    bottom: 10%;
   }
+
 
   .contact .contact-icons {
     align-self:

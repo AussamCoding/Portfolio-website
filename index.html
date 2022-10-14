@@ -28,7 +28,7 @@
     <nav id="nav">
       <input type="checkbox" id="nav-toggle">
       <ul class="links" id="links">
-        <li><a href="http://127.0.0.1:5501/index.html#home" id="head2">Home</a></li>
+        <li><a href="#hero" id="head2">Home</a></li>
         <li><a href="#hero" id="head3">About</a></li>
         <li><a href="#second-page" id="head1">Portfolio</a></li>
         <li><a href="#contact" id="head">Contact</a></li>
@@ -348,14 +348,14 @@
       event.preventDefault();
       document.getElementById("icon-burger").click();
       // document.getElementById("nav").style.position = "relative";
-      window.location = "http://127.0.0.1:5501/index.html#contact";
+      window.location = "#contact";
     })
     var input = document.getElementById("head1");
     input.addEventListener("click", function (event) {
       event.preventDefault();
       document.getElementById("icon-burger").click();
       // document.getElementById("nav").style.position = "relative";
-      window.location = "http://127.0.0.1:5501/index.html#second-page";
+      window.location = "#second-page";
     })
     var input = document.getElementById("head2");
     input.addEventListener("click", function (event) {
@@ -364,6 +364,8 @@
       // document.getElementById("nav").style.position = "relative";
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+      window.location = "#hero";
+
     })
     var input = document.getElementById("head3");
     input.addEventListener("click", function (event) {
@@ -372,6 +374,8 @@
       // document.getElementById("nav").style.position = "relative";
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+      window.location = "#hero";
+
     })
 
 
