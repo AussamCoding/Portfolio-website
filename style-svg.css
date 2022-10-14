@@ -110,3 +110,11 @@ image {
     opacity: none;
   }
 }
+
+
+
+@media only screen and (max-width: 750px) {
+  #logo {
+    pointer-events: none;
+  }
+}
